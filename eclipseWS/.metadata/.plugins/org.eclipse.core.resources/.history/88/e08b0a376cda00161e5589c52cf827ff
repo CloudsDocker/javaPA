@@ -1,0 +1,11 @@
+package todzhang;
+
+import java.util.stream.Stream;
+
+import org.junit.Test;
+
+public class CollectorTest {
+
+	@Test
+	public void testCollector(Stream<Artist> artists)
+}

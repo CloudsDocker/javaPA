@@ -1,0 +1,15 @@
+package todzhang;
+
+import java.util.Optional;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+public class OptionalTest {
+
+	@Test
+	public void testOptional(){
+		Optional<String> optA=Optional.of("a");
+		Assert.assertEquals("a", optA.get());
+	}
+}

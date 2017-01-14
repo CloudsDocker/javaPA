@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;todzhang.OpertionalTest&apos; to &apos;OptionalTest&apos;&#x0A;- Original project: &apos;Java8LambdaStreams&apos;&#x0A;- Original element: &apos;todzhang.OpertionalTest&apos;&#x0A;- Renamed element: &apos;todzhang.OptionalTest&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;OpertionalTest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;todzhang{OpertionalTest.java[OpertionalTest" matchStrategy="1" name="OptionalTest" qualified="false" references="true" similarDeclarations="false" stamp="1484399794620" textual="false" version="1.0"/>
+</session>
