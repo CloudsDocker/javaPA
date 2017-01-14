@@ -1,0 +1,27 @@
+package todzhang;
+
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+
+public class FindLongTracks {
+
+//	public Set
+//	public Set<String> findLongTracks(List<Album>)
+	
+	class Album{
+		class Track{
+			int length;
+			String name;
+			public int getLength() {
+				return length;
+			}
+			public String getName() {
+				return name;
+			}
+		}
+		
+		List<Track> tracks=new ArrayList<Track>();
+	}
+}

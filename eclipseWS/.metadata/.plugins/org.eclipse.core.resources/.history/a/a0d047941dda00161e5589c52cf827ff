@@ -1,0 +1,46 @@
+package todzhang;
+
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class FindLongTracks {
+
+//	public Set
+	public Set<String> findLongTracks(List<Album> list){
+		Set<String> trackNames=new HashSet<>();
+		list.stream().forEach(album->album.getTracks()
+				.forEach(track->{
+					if(track.getLength()>60){
+						trackNames.add(track.getName());
+					}
+				}));
+		return null;
+	}
+	
+	public Set<String> findLongTracks2(List<Album> list){
+		Set<String> trackNames=new HashSet<>();
+		
+		return trackNames;
+	}
+	
+	class Album{
+		class Track{
+			int length;
+			String name;
+			public int getLength() {
+				return length;
+			}
+			public String getName() {
+				return name;
+			}
+		}
+		
+		List<Track> tracks=new ArrayList<Track>();
+		public List<Track> getTracks() {
+			return tracks;
+		}
+	}
+}
