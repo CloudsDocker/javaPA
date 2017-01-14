@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestStream1 (1)" project="Java8LambdaStreams" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="todzhang.TestStream1" time="0.079">
+    <testcase name="testStreamMap" classname="todzhang.TestStream1" time="0.077"/>
+    <testcase name="testReduce" classname="todzhang.TestStream1" time="0.001"/>
+  </testsuite>
+</testrun>

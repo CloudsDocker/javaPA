@@ -2,6 +2,7 @@ package todzhang;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.BinaryOperator;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -23,5 +24,13 @@ public class TestStream1 {
 	{
 		List<String> items=Stream.of("test","todd","Hello").map(str-> str.toUpperCase()).collect(Collectors.toList());
 		Assert.assertEquals(items, Arrays.asList("TEST","TODD","HELLO"));
+	}
+	
+	@Test
+	public void testReduce()
+	{
+		BinaryOperator<Integer> accumulator=(x,y)->x+y;
+		int count=accumulator.apply(accumulator.apply(accumulator.apply(0, 1), 2), 3);
+		Assert.assertEquals(count, 6);
 	}
 }

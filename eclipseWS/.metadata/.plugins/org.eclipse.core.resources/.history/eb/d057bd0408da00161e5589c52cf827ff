@@ -1,0 +1,41 @@
+package todzhang;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.BinaryOperator;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+public class TestStream1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		List<String> items=Stream.of("a","n","z").collect(Collectors.toList());
+		System.out.println(items);
+
+	}
+
+	@Test
+	public void testStreamMap()
+	{
+		List<String> items=Stream.of("test","todd","Hello").map(str-> str.toUpperCase()).collect(Collectors.toList());
+		Assert.assertEquals(items, Arrays.asList("TEST","TODD","HELLO"));
+	}
+	
+	@Test
+	public void testReduce()
+	{
+		BinaryOperator<Integer> accumulator=new BinaryOperator<Integer>() {
+			
+			@Override
+			public Integer apply(Integer t, Integer u) {
+				// TODO Auto-generated method stub
+				return null;
+			}
+		};
+	}
+}
