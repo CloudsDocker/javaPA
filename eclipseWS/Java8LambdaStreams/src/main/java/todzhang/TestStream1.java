@@ -1,8 +1,12 @@
 package todzhang;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
+import org.junit.Assert;
+import org.junit.Test;
 
 public class TestStream1 {
 
@@ -11,6 +15,13 @@ public class TestStream1 {
 
 		List<String> items=Stream.of("a","n","z").collect(Collectors.toList());
 		System.out.println(items);
+
 	}
 
+	@Test
+	public void testStreamMap()
+	{
+		List<String> items=Stream.of("test","todd","Hello").map(str-> str.toUpperCase()).collect(Collectors.toList());
+		Assert.assertEquals(items, Arrays.asList("TEST","TODD","HELLO"));
+	}
 }
