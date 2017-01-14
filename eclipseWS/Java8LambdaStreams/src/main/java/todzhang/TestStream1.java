@@ -1,5 +1,6 @@
 package todzhang;
 
+<<<<<<< HEAD
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.BinaryOperator;
@@ -9,6 +10,12 @@ import java.util.stream.Stream;
 import org.junit.Assert;
 import org.junit.Test;
 
+=======
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+>>>>>>> 37336dba63e0bb0dc26702d45d4d39dfb6df1f50
 public class TestStream1 {
 
 	public static void main(String[] args) {
@@ -16,6 +23,7 @@ public class TestStream1 {
 
 		List<String> items=Stream.of("a","n","z").collect(Collectors.toList());
 		System.out.println(items);
+<<<<<<< HEAD
 
 	}
 
@@ -33,4 +41,8 @@ public class TestStream1 {
 		int count=accumulator.apply(accumulator.apply(accumulator.apply(0, 1), 2), 3);
 		Assert.assertEquals(count, 6);
 	}
+=======
+	}
+
+>>>>>>> 37336dba63e0bb0dc26702d45d4d39dfb6df1f50
 }
