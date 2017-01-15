@@ -1,0 +1,15 @@
+package todzhang;
+
+import java.util.Arrays;
+
+public class ParallelArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int[] list=new int[15];
+		Arrays.parallelSetAll(list, i->i);
+		System.out.println(list);
+	}
+
+}

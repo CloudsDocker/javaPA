@@ -1,0 +1,23 @@
+package todzhang;
+
+import java.util.Arrays;
+
+import javax.swing.plaf.synth.SynthSeparatorUI;
+
+public class ParallelArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int[] list=new int[15];
+		Arrays.parallelSetAll(list, i->i);
+//		System.out.println(list);
+//		Arrays.asList(list).stream().forEach(System.out::println);
+//		Arrays.asList(list).stream().forEach(i->System.out.println("["+i+"]"));
+//		System.out.println(Arrays.asList(list).stream().toString());
+		for (int j : list) {
+			System.out.println(j);
+		}
+	}
+
+}
